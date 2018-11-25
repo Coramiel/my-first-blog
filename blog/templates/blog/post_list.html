@@ -9,12 +9,12 @@
     </head>
     <body>
         <div>
-            <h1> <a href="www.instagram.com/coramiiel/"> Un Blog banal</a> </h1>
+            <h1> Un Blog banal </h1>
         </div>
 {% for post in posts %}
         <div>
             <p>published: {{ posts.published_date }}</p>
-            <h1><a href="www.instagram.com/coramiiel/">{ post.title }}</a></h1>
+            <h1>{ post.title }</h1>
             <p>{{ post.text|linebreaksbr }}</p>
          </div>
 {% endfor %}
